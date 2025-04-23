@@ -5,7 +5,7 @@
 # SPDX-License-Identifier: GPL-3.0
 #
 # GNU Radio Python Flow Graph
-# Title: Not titled yet
+# Title: 317 IQ Pre-processing
 # GNU Radio version: 3.10.9.2
 
 from gnuradio import blocks
@@ -26,7 +26,7 @@ from gnuradio import eng_notation
 class decsink(gr.top_block):
 
     def __init__(self, sink_name='0', source_name='0', startind=0):
-        gr.top_block.__init__(self, "Not titled yet", catch_exceptions=True)
+        gr.top_block.__init__(self, "317 IQ Pre-processing", catch_exceptions=True)
 
         ##################################################
         # Parameters

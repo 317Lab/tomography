@@ -1,3 +1,4 @@
+################## Utility functions for IQ file pre-processing (process.py) ##################
 import re
 import subprocess
 import os
@@ -12,10 +13,10 @@ class receiver:
         self.if_atten = if_atten
         self.starttime = starttime
         self.filename = filename
-        delay=0.0
-        start_ind = 0
-        filepath = ""
-        sinkpath = ""
+        self.delay=0.0
+        self.start_ind = 0
+        self.filepath = ""
+        self.sinkpath = ""
 
 
 # get locations based on subdirectory names

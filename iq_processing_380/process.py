@@ -1,21 +1,4 @@
-# import numpy as np
-# from scipy import signal
-# import iqtools
-# import matplotlib.pyplot as plt
-# # filename='381/lav_tuner2_3point125k_25atten_yellowstart.raw'
-# # iq_data = np.fromfile(filename, dtype=np.int16).astype(np.float32)
-# # iq_complex = iq_data[::2] + 1j * iq_data[1::2]
-# # iq_complex.astype(np.complex64).tofile("lav_tuner2_3point125k_25atten_yellowstart.bin")
-# filename='lav_tuner2_3point125k_25atten_yellowstart.bin'
-# # iq = get_iq_object(filename)
-# # iq.read_samples(200*1024)
-# # iq.method='fftw'
-# # time_grid,freq_grid,power_grid = iq.get_power_spectrogram(lframes = 1024, nframes = 200, sparse=True)
-# iqdata = iqtools.GRData(filename, fs = 2.5e6, center=30e6)
-# iqdata.read_samples(2000*1024)
-# xx, yy, zz = iqdata.get_power_spectrogram(nframes=2000, lframes=1024)
-# iqtools.plot_spectrogram(xx, yy, zz, filename='testplt')
- 
+################## Script for automatic IQ file pre-processing - synchronization and decimation + filtering ##################
 import argparse
 import processing_utilities as util
 import subprocess
