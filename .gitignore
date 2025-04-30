@@ -3,3 +3,5 @@
 *.raw
 *starttime*
 *.zip
+.venv
+.python-version
